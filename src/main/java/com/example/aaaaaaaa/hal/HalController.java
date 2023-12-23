@@ -58,7 +58,7 @@ public class HalController {
         }
     }
 
-    @PutMapping
+    @PutMapping("/{id}")
     public Hal updateHal(@RequestBody Hal hal) {
         try {
             logger.info("\n" + hal + " \nisimli Halin update işlemi tamamlandı.");

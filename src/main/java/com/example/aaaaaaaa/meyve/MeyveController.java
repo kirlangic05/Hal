@@ -59,7 +59,7 @@ public class MeyveController {
         }
     }
 
-    @PutMapping
+    @PutMapping("/{id}")
     public Meyve updateMeyve(@RequestBody Meyve meyve) {
         try {
             logger.info("\n" + meyve + " \nisimli meyvenin update işlemi gerçekleşti.");
